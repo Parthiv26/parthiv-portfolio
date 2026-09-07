@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  /* Default Light Cyber Theme Tokens */
+  --color-cyber-bg: #F8FAFC;
+  --color-cyber-card: #FFFFFF;
+  --color-cyber-text: #0F172A;
+  --color-cyber-muted: #475569;
+  --color-cyber-accent: #0D9488;
+  --color-cyber-red: #E11D48;
+  --color-cyber-purple: #7C3AED;
+}
+
+.dark {
+  /* Dark Cyber Theme Tokens */
+  --color-cyber-bg: #0A192F;
+  --color-cyber-card: #112240;
+  --color-cyber-text: #CCD6F6;
+  --color-cyber-muted: #8892B0;
+  --color-cyber-accent: #64FFDA;
+  --color-cyber-red: #FF5370;
+  --color-cyber-purple: #C792EA;
+}
+
+@theme {
+  --color-cyber-bg: var(--color-cyber-bg);
+  --color-cyber-card: var(--color-cyber-card);
+  --color-cyber-accent: var(--color-cyber-accent);
+  --color-cyber-text: var(--color-cyber-text);
+  --color-cyber-muted: var(--color-cyber-muted);
+  --color-cyber-red: var(--color-cyber-red);
+  --color-cyber-purple: var(--color-cyber-purple);
+
+  --font-mono: 'Fira Code', 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', 'Outfit', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-cyber-bg);
+  color: var(--color-cyber-text);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cyber-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cyber-card);
+  border: 1px solid var(--color-cyber-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyber-accent);
+}
+
+/* Glassmorphism utility */
+.glass-cyber {
+  background: var(--color-cyber-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+}
+
+.dark .glass-cyber {
+  border: 1px solid rgba(100, 255, 218, 0.15);
+}
+
+/* Terminal Header */
+.terminal-bar {
+  background: #1E293B;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.dark .terminal-bar {
+  background: #0d1b2a;
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
