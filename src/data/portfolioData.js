@@ -1,14 +1,14 @@
 export const personalInfo = {
   name: "Parthiv Patel",
-  title: "MSc Cybersecurity and Management Student",
+  title: "MSc Cybersecurity Management",
   specialization: "Cyber Security Analyst & Ethical Hacking",
   taglines: [
-    "Cyber Security Student",
+    "Cybersecurity Student",
     "Ethical Hacking Enthusiast",
     "Security Research Learner",
     "Vulnerability Assessor"
   ],
-  bio: `MSc Cybersecurity and Management student with a deep focus on Cyber Security, Offensive & Defensive Security Strategies, and Secure Software Development. Passionate about uncovering security flaws before malicious actors do. Experienced in Web Application Penetration Testing, Network Traffic Analysis, and Vulnerability Assessment. Committed to building robust security architectures and advancing ethical hacking research.`,
+  bio: `MSc Cybersecurity Management graduate focused on cybersecurity strategy, offensive and defensive security, and secure software development. I enjoy identifying vulnerabilities before they can be exploited and apply practical skills in web application penetration testing, network analysis, and risk assessment.`,
   location: "UK / Remote",
   email: "parthivpatel2609@gmail.com",
   phone: "+44 7386218787",
@@ -20,13 +20,13 @@ export const personalInfo = {
     { label: "Vulnerabilities Found", value: "28+" },
     { label: "TryHackMe Rank", value: "Top 4%" },
     { label: "Certifications", value: "4 Active" },
-    { label: "Security Projects", value: "8 Completed" }
+    { label: "Security Projects", value: "1 Major Project" }
   ]
 };
 
 export const aboutData = {
   headline: "Securing the Digital Frontier Through Research & Innovation",
-  description: `As an MSc Cybersecurity and Management student, I bridge the gap between software development and offensive security. My academic journey combines deep theoretical knowledge of computer networks, cryptography, and database architecture with practical hands-on experience in vulnerability assessment and ethical hacking.`,
+  description: `As an MSc Cybersecurity Management graduate, I connect software development with offensive and defensive security. My academic background spans computer networks, cryptography, database architecture, and hands-on vulnerability assessment, with a strong focus on ethical hacking and secure system design.`,
   corePillars: [
     {
       title: "Ethical Hacking & Pentesting",
@@ -50,6 +50,37 @@ export const aboutData = {
     }
   ]
 };
+
+export const experienceData = [
+  {
+    id: "exp-1",
+    title: "Cyber Risk Assessment & Response | Deloitte",
+    company: "Deloitte",
+    period: "2026",
+    location: "Forage Simulation",
+    description: "Completed the Deloitte Australia Cyber Security Virtual Experience Program, gaining practical exposure to cyber risk analysis, governance, and security response decision-making in a consulting environment.",
+    bullets: [
+      "Worked through a simulated cyber engagement focused on identifying security risks and evaluating control effectiveness.",
+      "Explored real-world challenges related to cyber governance, digital risk awareness, and response planning.",
+      "Strengthened my understanding of how cybersecurity principles are applied in business and professional consultancy contexts."
+    ],
+    link: "https://www.theforage.com/simulations/deloitte-au/cyber-c1e3/completed"
+  },
+  {
+    id: "exp-2",
+    title: "Cybersecurity Risk & Defense | Mastercard",
+    company: "Mastercard",
+    period: "2026",
+    location: "Forage Simulation",
+    description: "Completed the Mastercard Cybersecurity virtual experience, focusing on practical security challenges, risk awareness, and the application of cyber defense principles in a digital-first business environment.",
+    bullets: [
+      "Engaged with simulated cybersecurity scenarios centered on evaluating digital risk and operational security considerations.",
+      "Explored how cyber controls support business resilience and secure digital environments.",
+      "Deepened my understanding of cyber defense concepts in a real-world technology and payments context."
+    ],
+    link: "https://www.theforage.com/simulations/mastercard/cybersecurity-t8ye/completed"
+  }
+];
 
 export const skillsData = {
   security: [
@@ -82,140 +113,41 @@ export const skillsData = {
 export const certificationsData = [
   {
     id: "cert-1",
-    title: "Google Cybersecurity Professional Certificate",
-    issuer: "Google / Coursera",
-    date: "Issued Dec 2024",
-    credentialId: "GCC-8921-X902",
-    verifyUrl: "https://coursera.org/verify/professional-cert",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=80",
-    skills: ["SIEM Tools", "Python for Cyber", "Linux & SQL", "Intrusion Detection", "Packet Analysis"]
-  },
-  {
-    id: "cert-2",
-    title: "Cisco Introduction to Cybersecurity",
+    title: "Introduction to Cybersecurity",
     issuer: "Cisco Networking Academy",
-    date: "Issued Aug 2024",
-    credentialId: "CSCO-NET-7712",
-    verifyUrl: "https://netacad.com/verify",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=80",
+    date: "Issued Aug 2026",
+    credentialId: "e72a0c13-3267-4ddd-b52f-b80cc020ab4a",
+    verifyUrl: "/images/certificate.jpg",
+    image: "/images/certificate.jpg",
     skills: ["Network Protection", "Threat Detection", "Privacy & Data Confidentiality", "Firewall Fundamentals"]
-  },
-  {
-    id: "cert-3",
-    title: "Ethical Hacking Fundamentals",
-    issuer: "EC-Council / Academic Partner",
-    date: "Issued May 2024",
-    credentialId: "EHF-2024-5541",
-    verifyUrl: "https://eccouncil.org/verify",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80",
-    skills: ["Reconnaissance", "Vulnerability Scanning", "System Hacking", "Social Engineering Awareness"]
-  },
-  {
-    id: "cert-4",
-    title: "TryHackMe Learning Paths: Jr Penetration Tester",
-    issuer: "TryHackMe",
-    date: "Completed Jan 2025",
-    credentialId: "THM-JR-PENTEST-991",
-    verifyUrl: "https://tryhackme.com/p/ParthivPatel",
-    image: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800&auto=format&fit=crop&q=80",
-    skills: ["Privilege Escalation", "Burp Suite Deep Dive", "Network Exploitation", "Metasploit Mastery"]
   }
 ];
 
 export const projectsData = [
   {
-    id: "proj-1",
-    title: "Automated Vulnerability Scanner",
-    category: "Security Tools",
-    shortDesc: "Comprehensive Python vulnerability assessment engine integrating Nmap port diagnostics and OWASP ZAP automated REST scanner.",
-    fullDesc: "Designed an automated Python vulnerability scanning CLI tool with an intuitive web dashboard interface. It scans target hosts for open ports, banner disclosure, outdated services, misconfigured HTTP headers, cross-site scripting (XSS), and basic SQL injection vulnerabilities. Generates executive PDF reports with risk scoring and mitigation guidance.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=80",
-    technologies: ["Python", "Nmap API", "OWASP ZAP", "SQLite", "ReportLab", "React.js"],
-    githubUrl: "https://github.com/parthiv-patel-cyber",
-    liveDemoUrl: "https://demo.example.com",
-    vulnerabilitiesDetected: ["OWASP A01: Broken Access Control", "OWASP A03: Injection", "Missing Security Headers (HSTS, CSP)"]
-  },
-  {
-    id: "proj-2",
-    title: "Secure Complaint Management System",
-    category: "Web Security",
-    shortDesc: "End-to-end encrypted grievance management platform built with strict RBAC, AES-256 payload protection, and sanitized data flows.",
-    fullDesc: "Developed a full-stack security-focused complaint management web application for corporate environments. Features client-side payload encryption prior to database write, Argon2 password hashing, double-submit cookie CSRF tokens, strict Content Security Policy, and audited access controls to prevent IDOR and data leakage.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop&q=80",
-    technologies: ["React.js", "Node.js", "Express", "MongoDB", "AES-256 Crypto", "JWT"],
-    githubUrl: "https://github.com/parthiv-patel-cyber",
-    liveDemoUrl: "https://demo.example.com",
-    vulnerabilitiesDetected: ["Prevented IDOR", "Mitigated Stored XSS", "Eliminated SQL/NoSQL Injection"]
-  },
-  {
-    id: "proj-3",
-    title: "Web Application Security Testing Suite",
-    category: "Web Security",
-    shortDesc: "Custom Burp Suite extension and automation framework for detecting CSRF token bypasses and subtle input reflection flaw points.",
-    fullDesc: "Built a specialized Python payload injector and request interceptor tool that integrates with web security workflows. It automates testing for CORS misconfigurations, authorization bypasses across microservices, and hidden API parameter fuzzing.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=80",
-    technologies: ["Python", "Burp Suite API", "Jython", "Flask", "JSON Web Tokens"],
-    githubUrl: "https://github.com/parthiv-patel-cyber",
-    liveDemoUrl: "https://demo.example.com",
-    vulnerabilitiesDetected: ["Wildcard CORS Misconfigurations", "JWT Signature Stripping", "Bypassable Auth Headers"]
-  },
-  {
-    id: "proj-4",
-    title: "Real-time Network Traffic & Intrusion Dashboard",
+    id: "msc-project",
+    title: "Port Scanner & Network Enumeration Tool",
     category: "Network Security",
-    shortDesc: "Packet analysis dashboard parsing PCAP telemetry in real-time to alert on SYN floods, ARP spoofing, and port scans.",
-    fullDesc: "Created an interactive network telemetry visualizer that streams PCAP network activity. Utilizes PyShark and WebSocket streaming to display live protocol distributions, flag anomalous traffic bursts, detect ARP poisoning attempts, and send instant alerts to security admins.",
-    image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&auto=format&fit=crop&q=80",
-    technologies: ["Python", "PyShark", "Wireshark", "WebSockets", "React", "Chart.js"],
-    githubUrl: "https://github.com/parthiv-patel-cyber",
-    liveDemoUrl: "https://demo.example.com",
-    vulnerabilitiesDetected: ["ARP Spoofing Attacks", "TCP SYN Flood Vectors", "Malicious Port Sweep Signals"]
+    shortDesc: "A Python-based network reconnaissance utility for identifying live hosts, open ports, and exposed services in a controlled cybersecurity assessment environment.",
+    fullDesc: "This project was developed to strengthen my practical understanding of network reconnaissance and service enumeration. The tool scans target systems, identifies open ports, detects active services, and supports initial risk assessment for potential exposure points. It reflects my hands-on experience with ethical hacking principles, offensive security fundamentals, and the importance of proactive network defence.",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80",
+    technologies: ["Python", "Socket Programming", "Network Scanning", "Service Enumeration", "Ethical Hacking", "Cybersecurity"],
+    githubUrl: "https://github.com/Parthiv26/Port_Scannner",
+    liveDemoUrl: "https://github.com/Parthiv26/Port_Scannner",
+    vulnerabilitiesDetected: ["Live host detection", "Open port enumeration", "Exposed service discovery", "Threat surface mapping"]
   }
 ];
 
-export const achievementsData = [
-  {
-    id: "ach-1",
-    title: "TryHackMe Top 4% Global Ranking",
-    category: "CTF & Lab Achievement",
-    date: "2024 - Present",
-    description: "Successfully compromised 120+ vulnerable virtual machines, covering active directory exploitation, privilege escalation, web application security, and network pivot labs.",
-    icon: "Trophy"
-  },
-  {
-    id: "ach-2",
-    title: "2nd Runner Up - National Cyber Defence CTF",
-    category: "Competition",
-    date: "Nov 2024",
-    description: "Competed against 80+ university teams in a 24-hour jeopardy-style CTF challenge focusing on Reverse Engineering, Cryptography, Forensic PCAP Analysis, and Web Exploitation.",
-    icon: "Award"
-  },
-  {
-    id: "ach-3",
-    title: "Lead Student Speaker - Ethical Hacking Workshop",
-    category: "Security Workshops",
-    date: "Sep 2024",
-    description: "Organized and delivered a hands-on cybersecurity workshop on 'OWASP Top 10 & Practical Burp Suite Exploitation' for over 150 undergraduate computer science students.",
-    icon: "Users"
-  },
-  {
-    id: "ach-4",
-    title: "Responsible Vulnerability Disclosure",
-    category: "Security Research",
-    date: "2024",
-    description: "Identified and responsibly disclosed an IDOR and Broken Authentication vulnerability in an online academic testing platform, receiving official hall of fame recognition.",
-    icon: "ShieldCheck"
-  }
-];
+export const achievementsData = [];
 
 export const educationData = [
   {
     id: "edu-1",
-    degree: "MSc Cybersecurity and Management",
+    degree: "MSc Cybersecurity Management",
     specialization: "Specialization in Cyber Security & Information Assurance",
     institution: "University of Law (Manchester)",
-    duration: "2025 - 2026 (Final Year)",
-    score: "CGPA: 8.9 / 10.0",
+    duration: "2025 - (Expected-Graduation Oct 2026)",
+    score: "CGPA: - ",
     details: [
       "Key Coursework: Cryptography & Network Security, Advanced Web Security, Cyber Forensics, Cloud Security Architecture, Mobile Security.",
       "Final Year Dissertation: 'Automated AI-assisted Threat Surface Detection & Vulnerability Prioritization Matrix'."
@@ -231,18 +163,6 @@ export const educationData = [
     details: [
       "Key Coursework: Data Structures, Operating Systems, Computer Networks, Database Management Systems, Linux System Administration.",
       "Graduation Capstone: 'Encrypted Multi-Node File Sync Tool using Python'."
-    ]
-  },
-  {
-    id: "edu-3",
-    degree: "Relevant Industry Certifications & Specialized Badges",
-    specialization: "Self-Driven Hands-On Learning",
-    institution: "Coursera, Cisco NetAcad, TryHackMe, PortSwigger Web Security Academy",
-    duration: "2023 - Present",
-    score: "Completed 200+ Lab Hours",
-    details: [
-      "PortSwigger Web Security Academy: Completed Practitioner labs in SQL Injection, Cross-Site Scripting, and Authentication bypasses.",
-      "Linux System & Shell Scripting Proficiency."
     ]
   },
 ];

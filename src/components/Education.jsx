@@ -25,7 +25,7 @@ export default function Education() {
             Education & Academic Roadmap
           </h2>
           <p className="text-cyber-muted text-sm sm:text-base mt-2 max-w-2xl font-medium">
-            MSc Cybersecurity and Management degree alongside foundational undergraduate studies and specialized security labs.
+            MSc Cybersecurity Management degree alongside foundational undergraduate studies and specialized security labs.
           </p>
         </motion.div>
 

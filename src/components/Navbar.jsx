@@ -6,6 +6,7 @@ import { useScrollSpy } from '../hooks/useScrollSpy';
 const navItems = [
   { id: 'hero', label: 'Home' },
   { id: 'about', label: 'About' },
+  { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
   { id: 'certifications', label: 'Certifications' },
   { id: 'projects', label: 'Projects' },

@@ -11,6 +11,10 @@ const iconMap = {
 };
 
 export default function Achievements() {
+  if (!achievementsData || achievementsData.length === 0) {
+    return null;
+  }
+
   return (
     <section id="achievements" className="py-24 relative z-10 border-t border-cyber-accent/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,14 +29,14 @@ export default function Achievements() {
         >
           <div className="flex items-center space-x-3 mb-2 font-mono text-cyber-accent text-sm">
             <span className="text-cyber-accent font-semibold">05.</span>
-            <span>CTF_&_HONORS</span>
+            <span>ACHIEVEMENTS</span>
             <div className="h-px bg-cyber-accent/30 flex-grow max-w-xs"></div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-cyber-text">
-            Achievements & CTF Highlights
+            Security Highlights
           </h2>
           <p className="text-cyber-muted text-sm sm:text-base mt-2 max-w-2xl font-medium">
-            Recognitions, Capture The Flag (CTF) tournament ranks, security workshop leadership, and vulnerability research disclosures.
+            Recognition for hands-on learning, security challenges, public awareness work, and practical cyber skills development.
           </p>
         </motion.div>
 
@@ -76,7 +80,7 @@ export default function Achievements() {
 
                 <div className="mt-4 pt-3 border-t border-cyber-accent/10 flex items-center space-x-2 font-mono text-[11px] text-cyber-accent font-semibold">
                   <Sparkles className="w-3.5 h-3.5" />
-                  <span>VERIFIED RECORD // HALL OF FAME</span>
+                  <span>SECURITY HIGHLIGHT</span>
                 </div>
               </motion.div>
             );

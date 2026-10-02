@@ -5,7 +5,7 @@ import { projectsData } from '../data/portfolioData';
 import ProjectModal from './ProjectModal';
 import { GithubIcon } from './SocialIcons';
 
-const categories = ['All', 'Security Tools', 'Web Security', 'Network Security'];
+const categories = ['All'];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -33,10 +33,10 @@ export default function Projects() {
             <div className="h-px bg-cyber-accent/30 flex-grow max-w-xs"></div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-cyber-text">
-            Featured Cybersecurity Projects
+            Project
           </h2>
           <p className="text-cyber-muted text-sm sm:text-base mt-2 max-w-2xl font-medium">
-            Offensive and defensive security applications, vulnerability scanners, and encrypted full-stack software.
+            A focused cybersecurity project developed during my MSc, emphasizing network reconnaissance, service enumeration, and practical security analysis.
           </p>
         </motion.div>
 

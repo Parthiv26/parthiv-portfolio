@@ -7,6 +7,29 @@ import CertModal from './CertModal';
 export default function Certifications() {
   const [selectedCert, setSelectedCert] = useState(null);
 
+  const renderCertPreview = (cert) => {
+    const isPdf = cert.image?.toLowerCase().endsWith('.pdf');
+
+    if (isPdf) {
+      return (
+        <embed
+          src={cert.image}
+          type="application/pdf"
+          className="w-full h-full object-cover"
+          title={cert.title}
+        />
+      );
+    }
+
+    return (
+      <img
+        src={cert.image}
+        alt={cert.title}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+    );
+  };
+
   return (
     <section id="certifications" className="py-24 relative z-10 border-t border-cyber-accent/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,11 +69,7 @@ export default function Certifications() {
               <div>
                 {/* Certificate Image Preview */}
                 <div className="relative aspect-video overflow-hidden bg-cyber-bg border-b border-cyber-accent/20">
-                  <img
-                    src={cert.image}
-                    alt={cert.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  {renderCertPreview(cert)}
                   <div className="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-3 backdrop-blur-xs">
                     <button
                       onClick={() => setSelectedCert(cert)}

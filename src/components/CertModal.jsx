@@ -4,6 +4,29 @@ import { X, ExternalLink, ShieldCheck, Award, Calendar, Hash } from 'lucide-reac
 export default function CertModal({ cert, onClose }) {
   if (!cert) return null;
 
+  const renderCertificatePreview = () => {
+    const isPdf = cert.image?.toLowerCase().endsWith('.pdf');
+
+    if (isPdf) {
+      return (
+        <embed
+          src={cert.image}
+          type="application/pdf"
+          className="w-full h-full object-cover"
+          title={cert.title}
+        />
+      );
+    }
+
+    return (
+      <img
+        src={cert.image}
+        alt={cert.title}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+    );
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md transition-opacity">
       <div
@@ -28,11 +51,7 @@ export default function CertModal({ cert, onClose }) {
         <div className="p-6 space-y-6 max-h-[80vh] overflow-y-auto">
           {/* Cert Preview Image */}
           <div className="relative rounded-xl overflow-hidden border border-cyber-accent/30 aspect-video group">
-            <img
-              src={cert.image}
-              alt={cert.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            />
+            {renderCertificatePreview()}
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
               <span className="font-mono text-xs text-cyber-accent bg-cyber-card/90 px-3 py-1 rounded border border-cyber-accent/40 font-semibold">
                 VERIFIED CREDENTIAL

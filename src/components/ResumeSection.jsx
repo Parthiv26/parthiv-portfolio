@@ -24,10 +24,10 @@ export default function ResumeSection() {
             <div className="h-px bg-cyber-accent/30 flex-grow max-w-xs"></div>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-cyber-text">
-            Resume & Official Dossier
+            Resume & Profile
           </h2>
           <p className="text-cyber-muted text-sm sm:text-base mt-2 max-w-2xl font-medium">
-            View or download my verified resume detailing academic records, security research, and project portfolio.
+            View or download my resume and summary of academic study, technical projects, and cybersecurity learning.
           </p>
         </motion.div>
 
@@ -42,30 +42,30 @@ export default function ResumeSection() {
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold text-cyber-text">
-                {personalInfo.name} — Cybersecurity Specialization
+                {personalInfo.name} — MSc Cybersecurity Management
               </h3>
 
               <p className="text-cyber-muted text-sm sm:text-base leading-relaxed font-medium">
-                Comprehensive overview of my MSc Cybersecurity and Management coursework, ethical hacking tools, vulnerability disclosures, and practical security projects formatted for recruiters and cybersecurity organizations.
+                Cybersecurity graduate with practical experience in network security, ethical hacking, web security, and project-based learning through academic study and simulated industry exercises.
               </p>
 
               {/* Quick checklist */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-mono text-xs text-cyber-muted font-medium">
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-cyber-accent" />
-                  <span>Verified Contact & PGP Key</span>
+                  <span>MSc Cybersecurity Management</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-cyber-accent" />
-                  <span>TryHackMe & Lab Metrics</span>
+                  <span>Network & Web Security Skills</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-cyber-accent" />
-                  <span>Pentesting Project Artifacts</span>
+                  <span>Cybersecurity Projects</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-cyber-accent" />
-                  <span>Google & Cisco Certifications</span>
+                  <span>Cisco Intro to Cybersecurity</span>
                 </div>
               </div>
 
